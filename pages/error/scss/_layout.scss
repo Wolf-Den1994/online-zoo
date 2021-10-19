@@ -1,0 +1,56 @@
+.wrapper {
+  padding: 190px 0;
+  max-width: 116rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.visuallyhidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+}
+
+.panda {
+  margin: 0 0 33px 0;
+  width: 100%;
+}
+
+.panda__img {
+  margin: 0 auto;
+  background-image: url(../../../assets/images/error/panda.svg);
+  width: 675px;
+  height: 558px;
+  @include svg();
+  display: block;
+}
+
+.page-not-found {
+  margin: 0 0 19px 0;
+  font-family: $font-cursive;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: $color-grey;
+}
+
+.go-back {
+  display: block;
+  text-decoration: none;
+  font-family: $font-cursive;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: $color-sky;
+  &:hover {
+    color: $color-lightblue;
+  }
+}

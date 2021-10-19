@@ -1,0 +1,477 @@
+.wrapper-background {
+  background-color: $color-aqua;
+  position: relative;
+}
+.wrapper-background-map {
+  background-color: $color-aqua;
+  position: relative;
+  padding-bottom: 100px;
+}
+.wrapper {
+  max-width: 116rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.visuallyhidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  border: 0;
+}
+
+.header_menu_burger_wrapper {
+  display: none;
+}
+
+body.lock {
+  overflow-y: hidden;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #214a4599;
+  display: none;
+  z-index: 7;
+  cursor: pointer;
+}
+
+.header {
+  padding: 12px 0 9px 0;
+  @include flex(flex-start);
+  &__logo {
+    margin: 0 5.7rem 0 0;
+  }
+  &__logo-link {
+    @include svg(block);
+    background-image: url(../../../assets/icons/main/logo.svg);
+    width: 112px;
+    height: 57px;
+  }
+  &__list {
+    @include flex();
+  }
+  &__item {
+    margin: 0 3.5rem 0 0;
+  }
+  &__link {
+    text-decoration: none;
+    @include font-general($font);
+    font-weight: 500;
+    &_active {
+      cursor: default;
+      text-shadow: $color-lawgreen 0.8px 0.8px 0,
+        $color-lawgreen -0.8px -0.8px 0, $color-lawgreen -0.8px 0.8px 0,
+        $color-lawgreen 0.8px -0.8px 0;
+    }
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      text-shadow: $color-lawgreen 0.8px 0.8px 0,
+        $color-lawgreen -0.8px -0.8px 0, $color-lawgreen -0.8px 0.8px 0,
+        $color-lawgreen 0.8px -0.8px 0;
+    }
+  }
+  &__menu_burder,
+  &__close_burgers {
+    cursor: pointer;
+  }
+  &__menu_burder-svg {
+    background-image: url(../../../assets/icons/main/burger.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 36px;
+    height: 22px;
+    display: none;
+  }
+}
+
+.main-overflow {
+  // margin-top: -15px;
+  margin-top: 0px;
+  padding: 0px 0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 945px;
+  max-height: 945px;
+  // transform: scale(0.91);
+}
+
+.map__hero-full_button {
+  display: none;
+}
+
+.map__hero-full_button-button {
+  font-family: $font;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: $color-black;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  border: none;
+  background: $color-hover;
+  border-radius: 30px;
+  padding: 9.5px 21.5px;
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: $color-hover-map;
+  }
+}
+
+.wrapper-map {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.map {
+  overflow: hidden;
+  &__svg svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+  }
+  &__enimal {
+    position: absolute;
+    @include flex();
+    text-decoration: none;
+    // transition: all 0.3s ease-in-out;
+    &_alligator {
+      left: calc(50% - 155px / 2 - 202.5px);
+      top: calc(50% - 64px / 2 + 64.5px);
+    }
+    &_panda {
+      & .map__panda-hero {
+        max-width: 52px;
+      }
+      left: calc(50% - 124px / 2 + 404px);
+      top: calc(50% - 64px / 2 + 68.5px);
+    }
+    &_eagle {
+      left: calc(50% - 7px / 2 - 499.5px);
+      top: calc(50% - 64px / 2 + 55.5px);
+    }
+    &_gorilla {
+      left: calc(50% - 136px / 2 + 143px);
+      top: calc(50% - 64px / 2 + 164.5px);
+    }
+    &-img {
+      text-decoration: none;
+      cursor: pointer;
+    }
+    &-img_alligator {
+      background-image: url(../../../assets/images/map/alligator_clear.png);
+      border: 2px solid $color-white;
+      border-radius: 50%;
+      @include svg();
+      width: 60px;
+      height: 60px;
+      &:hover {
+        margin-top: -2px;
+        margin-left: -2px;
+        border: 4px solid $color-lawgreen;
+      }
+    }
+    &-img_panda {
+      background-image: url(../../../assets/images/map/panda_clear.png);
+      border: 2px solid $color-white;
+      border-radius: 50%;
+      @include svg();
+      width: 60px;
+      height: 60px;
+      &:hover {
+        margin-top: -2px;
+        margin-left: -2px;
+        border: 4px solid $color-lawgreen;
+      }
+    }
+    &-img_eagle {
+      background-image: url(../../../assets/images/map/eagle_clear.png);
+      border: 2px solid $color-white;
+      border-radius: 50%;
+      @include svg();
+      width: 60px;
+      height: 60px;
+      &:hover {
+        margin-top: -2px;
+        margin-left: -2px;
+        border: 4px solid $color-lawgreen;
+      }
+    }
+    &-img_gorilla {
+      background-image: url(../../../assets/images/map/gorilla_clear.png);
+      border: 2px solid $color-white;
+      border-radius: 50%;
+      @include svg();
+      width: 60px;
+      height: 60px;
+      &:hover {
+        margin-top: -2px;
+        margin-left: -2px;
+        border: 4px solid $color-lawgreen;
+      }
+    }
+  }
+  &__hero {
+    @include font-map();
+    text-transform: uppercase;
+    margin: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+  &__hero-panda {
+    max-width: 50px;
+    width: 100%;
+  }
+  &__country {
+    position: absolute;
+    @include font-map();
+    &_usa {
+      left: calc(50% - 31px / 2 - 363.5px);
+      top: calc(50% - 19px / 2 + 14px);
+    }
+    &_drc {
+      max-width: 61px;
+      left: calc(50% - 61px / 2 - 38.5px);
+      top: calc(50% - 42px / 2 + 171.5px);
+    }
+    &_china {
+      left: calc(50% - 41px / 2 + 273.5px);
+      top: calc(50% - 19px / 2 + 28px);
+    }
+  }
+}
+
+.active-hover-map {
+  fill: $color-hover-map;
+}
+.active-hover-marker {
+  fill: $color-hover;
+}
+
+.map__hero-full {
+  @include flex();
+  flex-direction: column;
+  background-image: url(../../../assets/icons/map/window.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 121px;
+  height: 47px;
+  @include font-map();
+  text-align: center;
+  display: none;
+  &_uppercase {
+    text-transform: uppercase;
+  }
+  transition: all 0.3s ease-in-out;
+}
+
+.map__hero-alligator {
+  position: absolute;
+  left: calc(50% - 17px / 2 - 202.5px);
+  top: calc(50% - 35px / 2 + 64.5px);
+}
+.map__hero-panda {
+  position: absolute;
+  left: calc(50% - -5px / 2 + 404px);
+  top: calc(50% - 57px / 2 + 68.5px);
+}
+.map__hero-eagle {
+  position: absolute;
+  left: calc(50% - 138px / 2 - 499.5px);
+  top: calc(50% - 38px / 2 + 55.5px);
+}
+.map__hero-gorilla {
+  position: absolute;
+  left: calc(50% - 8px / 2 + 143px);
+  top: calc(50% - 40px / 2 + 164.5px);
+}
+
+.map__enimal_alligator:hover .map__hero-full-alligaor,
+.map__enimal_panda:hover .map__hero-full-panda,
+.map__enimal_eagle:hover .map__hero-full-eagle,
+.map__enimal_gorilla:hover .map__hero-full-gorilla {
+  display: flex;
+}
+
+.map__enimal_alligator:hover ~ .map__hero-alligator,
+.map__enimal_panda:hover ~ .map__hero-panda,
+.map__enimal_gorilla:hover ~ .map__hero-gorilla {
+  display: none;
+}
+
+.zoom__buttons {
+  @include flex(center, flex-end);
+  flex-direction: column;
+  position: sticky;
+  // right: 20px;
+  bottom: 20px;
+  margin: -181px 20px 0 0;
+  .button {
+    width: 32px;
+    height: 40px;
+    background-color: $color-white;
+    @include button();
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .zoom__minus {
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid $color-black;
+  }
+  .zoom__plus {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+.wrapper-background-footer {
+  // margin-top: -13px;
+  background-color: $color-aqua;
+  padding: 80px 0 20px 0;
+  background-image: url(../../../assets/images/main/footer.png);
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+.footer {
+  @include flex(center, stretch);
+  flex-direction: column;
+  &__top,
+  &__bottom {
+    @include flex(space-between);
+  }
+  &__logo-link {
+    @include svg(block);
+    background-image: url(../../../assets/icons/main/logo.svg);
+    width: 98px;
+    height: 50px;
+  }
+  &__button {
+    margin: 0 40px 0 -25px;
+    padding: 15px 28px;
+    background-color: $color-lawgreen;
+    border-radius: 30px;
+    text-decoration: none;
+    @include button();
+    @include font-general();
+  }
+  &__nav {
+    max-width: 256px;
+    width: 100%;
+    @include flex(space-between);
+  }
+  &__nav-left,
+  &__nav-right {
+    @include flex(space-between, flex-start);
+    flex-direction: column;
+  }
+  &__nav-link {
+    @include font-general();
+    text-decoration: none;
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      text-shadow: $color-lawgreen 0.8px 0.8px 0,
+        $color-lawgreen -0.8px -0.8px 0, $color-lawgreen -0.8px 0.8px 0,
+        $color-lawgreen 0.8px -0.8px 0;
+    }
+    &_top {
+      margin-bottom: 15px;
+    }
+  }
+  &__social {
+    margin: 0 0 15px 0;
+    max-width: 190px;
+    width: 100%;
+    @include flex(space-between);
+  }
+  &__social-link {
+    &:hover {
+      transition: all 1.5s ease-in-out;
+      transform: scale(1.2) rotate(360deg);
+    }
+  }
+  &__link_inst {
+    @include svg();
+    background-image: url(../../../assets/icons/main/social/insta.svg);
+    width: 40px;
+    height: 40px;
+  }
+  &__link_facebook {
+    @include svg();
+    background-image: url(../../../assets/icons/main/social/facebook.svg);
+    width: 40px;
+    height: 40px;
+  }
+  &__link_twitter {
+    @include svg();
+    background-image: url(../../../assets/icons/main/social/twitter.svg);
+    width: 40px;
+    height: 40px;
+  }
+  &__link_youtube {
+    @include svg();
+    background-image: url(../../../assets/icons/main/social/youtube.svg);
+    width: 40px;
+    height: 40px;
+  }
+  &__bottom {
+    padding-top: 62px;
+    @include flex(space-between);
+  }
+  &__button_two {
+    display: none;
+  }
+  &__icons {
+    max-width: 295px;
+    width: 100%;
+    @include flex(space-between);
+  }
+  &__link-rss {
+    @include svg();
+    background-image: url(../../../assets/icons/main/social/rsschool.svg);
+    width: 141px;
+    height: 50px;
+  }
+  &__link-yem {
+    @include svg();
+    background-image: url(../../../assets/icons/main/social/yem.svg);
+    width: 97px;
+    height: 50px;
+  }
+  &__tooltip-yem {
+    text-decoration: none;
+    position: relative;
+  }
+  &__copy {
+    margin: 31px 138px 0px 0px;
+    @include font-general();
+  }
+  &__aftor {
+    margin: 31px 0px 0px 0px;
+    @include font-general();
+  }
+  &__br {
+    display: none;
+  }
+  &__br_span {
+    display: inline;
+  }
+}
+
+.footer__block-rss {
+  margin: 0 56px 0 0;
+}

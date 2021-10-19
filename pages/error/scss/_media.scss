@@ -1,0 +1,43 @@
+@media (max-width: 1300px) {
+  .wrapper {
+    padding: 50px 0;
+  }
+  .page-not-found {
+    margin: 0 0 10px 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .wrapper {
+    padding: 110px 0;
+  }
+  .panda {
+    margin: 0 0 25px 0;
+  }
+  .panda__img {
+    width: 550px;
+    height: 454px;
+  }
+}
+
+@media (max-width: 596px) {
+  .wrapper {
+    padding: 136px 0;
+  }
+  .panda {
+    margin: 0 0 13px 0;
+  }
+  .panda__img {
+    width: 260px;
+    height: 215px;
+  }
+  .page-not-found {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0 0 12px 0;
+  }
+  .go-back {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

@@ -1,0 +1,436 @@
+@media (max-width: 1400px) {
+  .main__sidebar-button-hidden {
+    display: block;
+    z-index: 2;
+  }
+  .sidebar {
+    display: none;
+  }
+  .sidebar__transform {
+    transform: translate(95px, 0);
+  }
+}
+
+@media (max-width: 1180px) {
+  .header {
+    padding: 12px 20px 11px 20px;
+  }
+  .main__movie {
+    margin: 0 0 18px 0;
+  }
+  .main_videos {
+    padding: 0 20px;
+    margin: 0 0 10px 0;
+  }
+  .main__submovies {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main__submovie {
+    margin: 0 0px 18px 0px;
+  }
+  .main_submovies-block {
+    min-width: 600px;
+  }
+  .iframe-one {
+    height: 603px;
+  }
+  .iframe-sub {
+    width: 290px;
+    height: 167px;
+  }
+
+  .main__description {
+    padding: 0 20px;
+  }
+  .main__master {
+    flex-direction: column;
+  }
+  .main__zoo {
+    margin: 0 0 9px 0;
+  }
+  .main__left-blocks,
+  .main__right-blocks {
+    max-width: 1200px;
+  }
+  .main__nutrition {
+    margin: 0 0 20px 0;
+  }
+
+  .wrapper-background-footer {
+    padding: 80px 0 0px 0;
+    background-position: center top;
+  }
+
+  .footer__block-rss {
+    margin: 0 56px 0 0;
+  }
+  .footer {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1110px) {
+  .iframe-one {
+    height: 563px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .footer {
+    padding: 0;
+    &__top {
+      padding: 0 180px;
+    }
+    &__bottom {
+      flex-direction: column;
+      background: $color-backgroundfooter;
+    }
+    &__aftor {
+      order: 2;
+    }
+    &__copy {
+      margin: 31px 0px 20px 0px;
+      order: 3;
+    }
+    &__button {
+      margin: 0;
+      padding: 15px 17px;
+    }
+    &__button_one {
+      display: none;
+    }
+    &__button_two {
+      display: block;
+    }
+    &__icons {
+      max-width: 600px;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .main {
+    padding: 78px 0 78px 0;
+  }
+  .iframe-one {
+    height: 523px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    &__top {
+      padding: 0 130px;
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .iframe-one {
+    height: 483px;
+  }
+}
+
+@media (max-width: 900px) {
+  .iframe-one {
+    height: 443px;
+  }
+}
+
+@media (max-width: 870px) {
+  .footer {
+    &__top {
+      padding: 0 95px;
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .iframe-one {
+    height: 403px;
+  }
+}
+
+@media (max-width: 790px) {
+  .footer {
+    &__top {
+      padding: 0 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    &__nav {
+      margin: 0px 10px 0 0;
+      max-width: 191px;
+    }
+    &__bottom {
+      padding-top: 50px;
+    }
+    &__copy {
+      margin: 9px 0px 20px 0px;
+    }
+    &__aftor {
+      margin: 50px 0 0 0;
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .main__population_insides .main__population-description,
+  .main__nutrition_insides .main__nutrition-description,
+  .main__habitat_insides .main__habitat-description,
+  .main__facts_insides .main__facts-description {
+    max-width: 494px;
+  }
+
+  .iframe-one {
+    height: 368px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    padding: 12px 20px 11px 20px;
+  }
+  .header__item:last-child {
+    margin: 0;
+  }
+  .header__logo {
+    margin: 0 5.1rem 0 0;
+  }
+  .iframe-one {
+    height: 338px;
+  }
+}
+
+@media (max-width: 660px) {
+  .footer {
+    &__top {
+      padding: 0;
+    }
+  }
+  .footer__block-rss {
+    margin: 0 0 0 0;
+  }
+}
+
+@media (max-width: 629px) {
+  .header__logo {
+    margin: 0 4.3rem 0 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .header {
+    justify-content: space-between;
+    &__menu {
+      display: none;
+    }
+    &__menu_burder-svg {
+      display: inline-block;
+    }
+    &__logo {
+      margin: 0 5.1rem 0 0;
+    }
+  }
+
+  .header_menu_burger_wrapper {
+    max-width: 250px;
+    width: 100%;
+    padding: 20px 20px 16px 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-backgroundburger;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 7;
+    display: none;
+  }
+  .header__menu_burgers {
+    margin: -10px 0 0 0;
+  }
+  .header__close_burgers {
+    align-self: flex-end;
+  }
+  .header__close_burgers-svg {
+    background-image: url(../../../../assets/icons/main/close.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 27px;
+    height: 27px;
+  }
+  .header__item_burgers {
+    margin-bottom: 20px;
+  }
+  .header__link_burgers {
+    font-family: $font-rubik;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 132%;
+    color: $color-black;
+    text-decoration: none;
+    &_active {
+      cursor: default;
+    }
+    &:hover {
+      transition: all 0.3s ease-in-out;
+      text-shadow: $color-lawgreen 0.8px 0.8px 0,
+        $color-lawgreen -0.8px -0.8px 0, $color-lawgreen -0.8px 0.8px 0,
+        $color-lawgreen 0.8px -0.8px 0;
+    }
+  }
+
+  .iframe-one {
+    height: 308px;
+  }
+  .main_submovies-block {
+    min-width: 500px;
+  }
+  .iframe-sub {
+    width: 240px;
+    height: 137px;
+  }
+
+  .footer {
+    &__top {
+      flex-direction: column;
+      background: $color-backgroundfooter;
+    }
+    &__logo {
+      order: 1;
+      margin: 0px 0 50px 0;
+    }
+    &__nav {
+      flex-direction: column;
+      order: 2;
+      margin: 0px 0 49px 0;
+    }
+    &__nav-left {
+      align-items: center;
+      margin: 0 0 16px 0;
+    }
+    &__nav-right {
+      align-items: center;
+    }
+    &__button_one {
+      display: block;
+      order: 3;
+    }
+    &__social {
+      margin: 48px 0 0 0;
+      order: 4;
+    }
+    &__button_two,
+    &__block-bottom {
+      display: none;
+    }
+    &__icons {
+      max-width: 300px;
+      margin: 0 auto; //??
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .iframe-one {
+    height: 273px;
+  }
+}
+
+@media (max-width: 540px) {
+  .main_videos {
+    padding: 0 10px;
+  }
+  .iframe-one {
+    height: 243px;
+  }
+  .main_submovies-block {
+    min-width: 400px;
+  }
+  .iframe-sub {
+    width: 190px;
+    height: 109px;
+  }
+
+  .main__description {
+    padding: 0px 10px;
+  }
+  .main__zoo {
+    margin: 0 0 15px 0;
+  }
+}
+
+@media (max-width: 470px) {
+  .iframe-one {
+    height: 218px;
+  }
+
+  .main__sidebar-button-hidden {
+    left: 0;
+  }
+  .sidebar__item.sidebar__pay {
+    display: none;
+  }
+}
+
+@media (max-width: 470px) {
+  .header {
+    padding: 12px 10px 11px 10px;
+  }
+
+  .iframe-one {
+    height: 203px;
+  }
+  .main_submovies-block {
+    min-width: 300px;
+  }
+  .iframe-sub {
+    width: 140px;
+    height: 82px;
+  }
+
+  .footer {
+    &__copy {
+      text-align: center;
+    }
+    &__br {
+      display: block;
+    }
+    &__br_span {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .iframe-one {
+    height: 190px;
+  }
+  .main__block-bottom {
+    display: block;
+  }
+  .sidebar__pay {
+    display: none;
+  }
+}
+
+@media (max-width: 370px) {
+  .iframe-one {
+    height: 176px;
+  }
+  .main__population_insides .main__population-description,
+  .main__nutrition_insides .main__nutrition-description,
+  .main__habitat_insides .main__habitat-description,
+  .main__facts_insides .main__facts-description {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 340px) {
+  .iframe-one {
+    height: 169px;
+  }
+}

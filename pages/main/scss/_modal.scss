@@ -1,0 +1,406 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in-out;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  max-width: 470px;
+  width: 100%;
+  z-index: 16;
+  padding: 60px 80px 40px;
+}
+.modal.mmm {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(41, 41, 41, 0.6);
+  pointer-events: none;
+  z-index: 10;
+}
+#overlay.mmm {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.modal-close-svg {
+  @include svg();
+  background-image: url(../../../assets/icons/main/close.svg);
+  width: 27px;
+  height: 27px;
+}
+
+.modal-animals {
+  padding: 9px 157px 9px 204px;
+  margin: 0 0 9px;
+  display: block;
+  background: #dff5b0;
+  border: 1px solid #9ca498;
+  max-width: 470px;
+  width: 100%;
+  color: gray;
+  font-family: $font;
+  font-weight: normal;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  appearance: none;
+  background-image: url('../../../assets/icons/main/modal_vector.svg');
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.6em top 50%, 0 0;
+  outline: none;
+  cursor: pointer;
+}
+.modal-animal option {
+  cursor: pointer;
+}
+.modal-animals:required:invalid {
+  color: gray;
+}
+.modal-animals option[value=''][disabled] {
+  color: gray;
+  display: none;
+}
+.modal-animals option {
+  color: black;
+}
+
+.model-money {
+  margin: 0 0 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-animal-number {
+  padding: 10px 10px 8px 10px;
+  max-width: 281px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #9ca498;
+  font-family: $font;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.modal-animal-number::-webkit-outer-spin-button,
+.modal-animal-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.modal-animal-number::placeholder {
+  color: #9ca498;
+}
+
+.modal-animals-usd {
+  padding: 9px 15px 9px 63px;
+  border: 1px solid #9ca498;
+  max-width: 159px;
+  width: 100%;
+  color: $color-black;
+  font-family: $font;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-animal-text {
+  padding: 7px 10px;
+  margin: 0 0 17px;
+  max-width: 448px;
+  width: 100%;
+  height: 70px;
+  resize: none;
+  font-family: $font;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  outline: none;
+  border: 1px solid #9ca498;
+}
+
+.modal-animal-text::placeholder {
+  color: #9ca498;
+}
+
+.modal-submit {
+  display: block;
+  margin: 0 auto;
+  padding: 9.5px 65px;
+  background-color: #70cb0e;
+  border-radius: 30px;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  border: none;
+  font-family: $font;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+}
+
+.modal-submit.disabled {
+  background-color: #bee496;
+  cursor: default;
+}
+
+.modalc {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in-out;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  max-width: 470px;
+  width: 100%;
+  z-index: 16;
+  padding: 85px 84px 40px 76px;
+  background-image: url(../../../assets/images/main/pay_2.png);
+  background-repeat: no-repeat;
+  background-position: center 34%;
+}
+.modalc.mmm {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modalc-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.modalc-close-svg {
+  @include svg();
+  background-image: url(../../../assets/icons/main/close.svg);
+  width: 27px;
+  height: 27px;
+}
+
+.modalc-form {
+  position: relative;
+  max-width: 470px;
+  width: 100%;
+}
+
+.modalc-card-number {
+  display: block;
+  padding: 10px 8px 8px 74px;
+  margin: 0 0 8px;
+  max-width: 222px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #9ca498;
+  font-family: $font;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.modalc-card-number::placeholder {
+  padding: 10px 8px 8px 32px;
+}
+
+.modalc-card-mm,
+.modalc-card-yy {
+  padding: 8px 25px 8px 24px;
+  margin: 0 0 8px;
+  max-width: 30px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #9ca498;
+  font-family: $font;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.modalc-card-yy {
+  padding: 8px 18px 8px 32px;
+}
+
+.modalc-card-number::-webkit-outer-spin-button,
+.modalc-card-number::-webkit-inner-spin-button,
+.modalc-card-mm::-webkit-outer-spin-button,
+.modalc-card-mm::-webkit-inner-spin-button,
+.modalc-card-yy::-webkit-outer-spin-button,
+.modalc-card-yy::-webkit-inner-spin-button,
+.modalc-card-cvc::-webkit-outer-spin-button,
+.modalc-card-cvc::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.modalc-card-number::placeholder,
+.modalc-card-mm::placeholder,
+.modalc-card-yy::placeholder,
+.modalc-card-name::placeholder,
+.modalc-card-cvc::placeholder {
+  color: #9ca498;
+}
+
+.modalc-card-name {
+  display: block;
+  margin: 0 0 91px;
+  padding: 10px 10px 8px 92px;
+  max-width: 203px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #9ca498;
+  font-family: $font;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.modalc-card-name::placeholder {
+  text-transform: capitalize;
+}
+
+.modalc-card-cvc {
+  position: absolute;
+  right: 1px;
+  bottom: 138px;
+  max-width: 35px;
+  padding: 8px 18px 8px 21px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #9ca498;
+  font-family: $font;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.modalc-submit {
+  display: block;
+  margin: 0 auto;
+  padding: 9.5px 49px 9.5px 44px;
+  background-color: #70cb0e;
+  border-radius: 30px;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  border: none;
+  font-family: $font;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+}
+
+.modalc-submit.disabled {
+  background-color: #bee496;
+  cursor: default;
+}
+
+.modal-warning {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  color: #9F6000;
+  background-color: #FEEFB3;
+  padding: 2px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 19px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  border: 1px solid;
+}
+
+.modal-warning.eee {
+  opacity: 1;
+}
+
+.modalc-warning {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  color: #9F6000;
+  background-color: #FEEFB3;
+  padding: 2px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 19px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  border: 1px solid;
+}
+
+.modalc-warning.eee {
+  opacity: 1;
+}
+
+.modalg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in-out;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  max-width: 470px;
+  width: 100%;
+  z-index: 16;
+  padding: 25px;
+}
+.modalg.mmm {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modalg-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.modalg-close-svg {
+  @include svg();
+  background-image: url(../../../assets/icons/main/close.svg);
+  width: 27px;
+  height: 27px;
+}
+
+.modalg-text {
+  text-align: center;
+  font-family: $font;
+  font-weight: normal;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 10px;
+}

@@ -1,0 +1,61 @@
+$color-white: #fff;
+$color-black: #000;
+$color-lawgreen: #70cb0e;
+$color-lightblue: #267bde;
+$color-aqua: #a7e1ff;
+$color-backgroundheader: #69cafc;
+$color-backgroundfooter: #dff5b0;
+$color-backgroundburger: #a7e1ff;
+$color-spoiler: #a7e1ff;
+$color-button-spoiler: #ffe68e;
+$color-hover-map: #d7e23c;
+$color-hover: #ff8800;
+$color-hover-card: #ff88003f;
+$font: 'Roboto', 'Arial', sans-serif;
+$font-rubik: 'Rubik', 'Roboto', 'Arial', sans-serif;
+@font-face {
+  font-family: 'SceneW01-Black';
+  src: url(../../../assets/fonts/SceneW01-Black.ttf);
+}
+$font-scene: 'SceneW01-Black', 'Roboto', 'Arial', sans-serif;
+
+@mixin flex($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin font-general($font-family: $font, $font-weight: normal) {
+  font-family: $font;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: $color-black;
+}
+
+@mixin font-map() {
+  font-family: $font;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: $color-black;
+}
+
+@mixin button() {
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  border: none;
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: $color-hover;
+  }
+}
+
+@mixin svg($display: inline-block) {
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
